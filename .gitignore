@@ -1,0 +1,7 @@
+/.vs
+*.csproj
+*.user
+/RealtyMarketApi/bin
+/RealtyMarketApi/obj
+/RealtyMarketApi/Properties
+*.sln
