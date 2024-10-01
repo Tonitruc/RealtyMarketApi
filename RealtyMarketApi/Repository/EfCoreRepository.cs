@@ -1,5 +1,4 @@
-﻿using RealtyMarketApi.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace RealtyMarketApi.Repository
 {

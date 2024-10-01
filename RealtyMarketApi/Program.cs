@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using RealtyMarketApi.Repository;
+
 namespace RealtyMarketApi
 {
     public class Program
@@ -6,13 +9,16 @@ namespace RealtyMarketApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
+            var service = builder.Services;
+
+            service.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            service.AddScoped<UserRepository>();
+
 
             var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
 
             app.UseAuthorization();
 

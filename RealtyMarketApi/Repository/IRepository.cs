@@ -1,7 +1,4 @@
-﻿using System.Security.Principal;
-using RealtyMarketApi.Models;
-
-namespace RealtyMarketApi.Repository
+﻿namespace RealtyMarketApi.Repository
 {
     public interface IRepository<T> where T : class, IEntity
     {

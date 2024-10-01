@@ -4,4 +4,6 @@
 /RealtyMarketApi/bin
 /RealtyMarketApi/obj
 /RealtyMarketApi/Properties
+/RealtyMarketApi/Migrations
+/RealtyMarketApi/appsettings.json
 *.sln
